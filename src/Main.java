@@ -5,8 +5,11 @@ public class Main {
         if (age >= 18) {
             System.out.println("«Если возраст человека равен " + age + " то он совершеннолетний».");
 
-        } else System.out.println(" «Если возраст человека равен " + age + " то он не достиг совершеннолетия," +
-                " нужно немного подождать».");
+        } else {
+
+            System.out.println(" «Если возраст человека равен " + age + " то он не достиг совершеннолетия," +
+                    " нужно немного подождать».");
+        }
 
         System.out.println("Задание2");
         int degrees = -10;
@@ -26,7 +29,7 @@ public class Main {
         }
         System.out.println("Задание4");
 
-        int years = 21;
+        int years = 17;
         if (years > 2 && years <= 6) {
             System.out.println("«Если возраст человека равен " + years + ", то ему нужно ходить в детский сад»");
 
@@ -34,7 +37,7 @@ public class Main {
         if (years > 6 && years <= 17) {
             System.out.println("«Если возраст человека равен " + years + ", то ему нужно ходить в школу»");
         }
-        if (years >= 17 && years <= 24) {
+        if (years > 17 && years <= 24) {
             System.out.println("«Если возраст человека равен " + years + ", то ему нужно ходить в университет»");
         }
         if (years > 24) {
@@ -42,11 +45,11 @@ public class Main {
         }
         System.out.println("Задание5");
 
-        int personsAge = 14;
+        int personsAge = 5;
         if (personsAge < 5) {
             System.out.println("«Если возраст ребенка равен " + personsAge + " то ему нельзя кататься на аттракционе».");
         }
-        if (personsAge > 5 && personsAge <= 14) {
+        if (personsAge >= 5 && personsAge <= 14) {
             System.out.println("«Если возраст ребенка равен " + personsAge + " то ему можно кататься на аттракционе в сопровождении».");
 
         }
@@ -66,7 +69,7 @@ public class Main {
         if (gotIntoTheCarriage > seatPlaceCarriage && gotIntoTheCarriage <= capacityOneCarriage) {
             System.out.println("Можно стоять");
         }
-        if (gotIntoTheCarriage > 102) {
+        if (gotIntoTheCarriage > capacityOneCarriage) {
             System.out.println("Нет мест");
         }
         System.out.println("Задание7");
